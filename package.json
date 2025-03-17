@@ -7,7 +7,7 @@
     "build": "vite build",
     "preview": "vite preview",
     "type-check": "tsc --noEmit",
-    "clean": "rm -rf node_modules package-lock.json && npm cache clean --force && npm install"
+    "clean": "if exist node_modules rmdir /s /q node_modules && if exist package-lock.json del package-lock.json && npm cache clean --force && npm install"
   },
   "dependencies": {
     "framer-motion": "^12.4.10",
