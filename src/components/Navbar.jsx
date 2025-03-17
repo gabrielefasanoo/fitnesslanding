@@ -26,19 +26,20 @@ const Navbar = () => {
         </ul>
 
         {/* Logo */}
-        <Link to="/" className="flex items-center space-x-2">
-          <div className="text-white">
-            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M6.5 14.5C7.32843 14.5 8 13.8284 8 13C8 12.1716 7.32843 11.5 6.5 11.5C5.67157 11.5 5 12.1716 5 13C5 13.8284 5.67157 14.5 6.5 14.5Z" fill="currentColor"/>
-              <path d="M17.5 14.5C18.3284 14.5 19 13.8284 19 13C19 12.1716 18.3284 11.5 17.5 11.5C16.6716 11.5 16 12.1716 16 13C16 13.8284 16.6716 14.5 17.5 14.5Z" fill="currentColor"/>
-              <path d="M8 13H16" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
-              <path d="M3 13H5M19 13H21" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
-            </svg>
-          </div>
-          <span className="text-2xl font-bold text-white">FitLife</span>
-        </Link>
-
-        {/* Pulsante Accedi */}
+        <div className="absolute left-1/2 transform -translate-x-1/2">
+          <Link to="/" className="flex items-center space-x-2">
+            <div className="text-white">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6.5 14.5C7.32843 14.5 8 13.8284 8 13C8 12.1716 7.32843 11.5 6.5 11.5C5.67157 11.5 5 12.1716 5 13C5 13.8284 5.67157 14.5 6.5 14.5Z" fill="currentColor"/>
+                <path d="M17.5 14.5C18.3284 14.5 19 13.8284 19 13C19 12.1716 18.3284 11.5 17.5 11.5C16.6716 11.5 16 12.1716 16 13C16 13.8284 16.6716 14.5 17.5 14.5Z" fill="currentColor"/>
+                <path d="M8 13H16" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
+                <path d="M3 13H5M19 13H21" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
+              </svg>
+            </div>
+            <span className="text-2xl font-bold text-white">FitLife</span>
+          </Link>
+        </div>
+        
         <div className="hidden md:flex">
           <Link 
             to="/login"
